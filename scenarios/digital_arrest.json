@@ -1,0 +1,59 @@
+{
+  "id": "digital_arrest",
+  "title": "CBI Digital Arrest",
+  "subtitle": "A fake cyber-cell officer claims a digital arrest warrant is open in your name.",
+  "risk": "high",
+  "caller_persona": "Officer Vikram Rathore, CBI Cyber Cell (simulated)",
+  "tactics": ["authority", "fear", "urgency", "secrecy", "isolation", "small_ask", "shame"],
+  "variables": {
+    "case_id": "PV-2026-0417",
+    "city": "Mumbai",
+    "amount": "Rs 2,40,000"
+  },
+  "opening": "Namaste, main CBI Cyber Cell se Officer Vikram Rathore bol raha hoon. Aapke naam par ek digital arrest warrant issue hua hai.",
+  "tactic_lines": {
+    "authority": [
+      "Namaste, main CBI Cyber Cell se Officer Vikram Rathore bol raha hoon. Aapke naam par digital arrest warrant {case_id} issue hua hai.",
+      "Main Senior Inspector Rathore, CBI cyber unit se record par hoon. Case ID {case_id} note kar lijiye.",
+      "Yeh call Supreme Court ke monitoring cell se connect hai. Main aapko official process samjha raha hoon."
+    ],
+    "fear": [
+      "Aapke naam se ek money-laundering case link mila hai. Aapke {city} address par team verification ke liye aa sakti hai.",
+      "Aapke documents ka misuse hua hai. Agar aap abhi cooperate nahi kiye, toh legal action shuru ho jayega.",
+      "Yeh case {amount} ke suspicious transaction se juda hai. Aapko turant apna side clear karna hoga."
+    ],
+    "urgency": [
+      "Sirf 10 minute hain. Senior officer ko report close karni hai, please call cut mat kijiye.",
+      "Aapka case aaj hi file hona hai. Ek minute ki bhi der ho gayi toh warrant active ho jayega.",
+      "Main abhi dusri line par hoon. Aapko within 5 minute decision lena hoga."
+    ],
+    "secrecy": [
+      "Yeh investigation confidential hai. Ghar walon ko batayenge toh case tampering maana jayega.",
+      "Please is call ki baat kisi ko mat bataiye. Warranty ke tahat disclosure allowed nahi hai.",
+      "Agar aap kisi ko batate hain, toh aapke against additional charges lag sakte hain."
+    ],
+    "isolation": [
+      "Please ek kamre me jaaiye aur darwaza band kar lijiye. Kisi se baat mat kijiye.",
+      "Loudspeaker par mat rakhiye. Main chah raha hoon ki aap akele suniye.",
+      "Aapke ghar me koi hai? Please unhe door rakhiye, yeh official verification hai."
+    ],
+    "small_ask": [
+      "Bas ek chhota sa kaam kijiye: notice par jo fake reference number {case_id} hai, woh padh dijiye. Koi bank detail nahi chahiye.",
+      "Sirf itna confirm kijiye ki fake case ID {case_id} aapki notice par hai. Isse process aage badhega.",
+      "Aap seedha jawab dijiye: fake reference {case_id} notice par likha hai ya nahi?"
+    ],
+    "shame": [
+      "Aap padhe-likhe lagte hain, phir bhi basic legal process nahi pata? Yeh sharam ki baat hai.",
+      "Itni umar me bhi aapko fraud se bachna nahi aata? Family aap par hasegi.",
+      "Aapko system par bharosa nahi? Isi soch ki wajah se log arrest ho jate hain."
+    ]
+  },
+  "debrief_tips": [
+    "No real CBI or police officer arrests someone over a phone call or WhatsApp video call.",
+    "Ask for the officer's name, department, and a written notice, then hang up and call the agency's official number.",
+    "Do not stay alone on a call that demands secrecy. Tell a family member immediately.",
+    "Never read out a code, ID, or number from your documents to an unexpected caller."
+  ],
+  "red_flags": ["threat of immediate arrest", "secrecy demand", "case ID read aloud", "pressure to stay on the call"],
+  "synthetic_note": "All names, case IDs, and amounts in this scenario are fictional."
+}

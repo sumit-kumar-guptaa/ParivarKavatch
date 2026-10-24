@@ -1,0 +1,59 @@
+{
+  "id": "bank_kyc",
+  "title": "Bank KYC Freeze",
+  "subtitle": "A fake bank fraud officer says the account will be frozen unless KYC is completed now.",
+  "risk": "high",
+  "caller_persona": "Priya Sharma, Bank Fraud Prevention Unit (simulated)",
+  "tactics": ["authority", "fear", "urgency", "secrecy", "isolation", "small_ask", "shame"],
+  "variables": {
+    "bank": "Bharat National Bank",
+    "case_id": "KYC-8842-FAKE",
+    "city": "Pune"
+  },
+  "opening": "Namaste, main {bank} ki Fraud Prevention Unit se Priya Sharma bol rahi hoon. Aapke account par ek KYC alert hai.",
+  "tactic_lines": {
+    "authority": [
+      "Namaste, main {bank} ki Fraud Prevention Unit se Priya Sharma bol rahi hoon. Aapke account par KYC alert {case_id} hai.",
+      "Main bank ke central verification desk se hoon. Aapka reference {case_id} system me flag hua hai.",
+      "Yeh call {bank} ke risk department ki official follow-up hai. Main aapka case handle kar rahi hoon."
+    ],
+    "fear": [
+      "Agar KYC aaj complete nahi hua, toh aapka account freeze ho jayega aur salary credit nahi hogi.",
+      "Aapke account se ek suspicious transfer detect hua hai. Bank ko turant confirm karna hai.",
+      "Freeze hone ke baad branch jaakar bhi 7 din lag sakte hain. Abhi resolve karna better hai."
+    ],
+    "urgency": [
+      "Sirf 10 minute ka window hai. Uske baad system automatically account block kar dega.",
+      "Main dusre customers ke paas ja rahi hoon. Aapko abhi confirm karna hoga.",
+      "Aaj shaam tak update nahi hua toh aapki auto-debit payments fail ho jayengi."
+    ],
+    "secrecy": [
+      "Yeh internal investigation hai, branch staff ko bhi mat bataiye. Direct main handle kar rahi hoon.",
+      "Please yeh call confidential rakhiye. Family ko batane se panic ho sakta hai.",
+      "Aap kisi ko bhi is verification ke baare me mat bataiye, warna case slow ho jayega."
+    ],
+    "isolation": [
+      "Please aap ek quiet room me jaaiye. Background me koi bol raha hai toh verification disturb hoga.",
+      "Kisi family member ko phone mat dijiye. Bank policy ke tahat sirf account holder se baat allowed hai.",
+      "Aap akele hain? Achha, kyunki yeh personal banking matter hai."
+    ],
+    "small_ask": [
+      "Bas fake reference {case_id} confirm kar dijiye jo aapke SMS me aaya tha. Koi OTP ya PIN nahi chahiye.",
+      "Ek chhota sa step: apne fake KYC alert ka reference {case_id} read kar dijiye. Main note kar lungi.",
+      "Sirf haan ya na boliye: fake alert {case_id} aapke paas hai?"
+    ],
+    "shame": [
+      "Aapko banking basics bhi nahi pata? Isliye fraud ho raha hai. Dhyan se suniye.",
+      "Itni padhai ke baad bhi aap KYC process nahi samajhte? Family ko aap par garv nahi hoga.",
+      "Aap har cheez par sawaal karte hain, isi wajah se account freeze hota hai."
+    ]
+  },
+  "debrief_tips": [
+    "A bank will never ask for an OTP, PIN, password, or card number on a phone call.",
+    "Hang up and call the number printed on your card or passbook, or visit the branch.",
+    "Account-freeze threats are designed to create panic. A genuine bank notice arrives in writing.",
+    "Do not share your screen or install a remote-access app for 'KYC'."
+  ],
+  "red_flags": ["urgency window", "threat to freeze account", "secrecy from branch/family", "asking for a code"],
+  "synthetic_note": "The bank, case ID, and caller in this scenario are fictional."
+}

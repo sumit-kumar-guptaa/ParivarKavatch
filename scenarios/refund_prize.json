@@ -1,0 +1,54 @@
+{
+  "id": "refund_prize",
+  "title": "Refund / Prize Greed",
+  "subtitle": "A fake prize desk offers an unexpected refund or lottery win that needs one small step.",
+  "risk": "medium",
+  "caller_persona": "Neha Kapoor, National Reward Desk (simulated)",
+  "tactics": ["greed", "authority", "urgency", "secrecy", "small_ask", "shame"],
+  "variables": {
+    "prize": "Rs 25,000 cashback",
+    "case_id": "WIN-2026-FAKE",
+    "city": "Bengaluru"
+  },
+  "opening": "Congratulations! Aapne {prize} jeeta hai. Main National Reward Desk se Neha Kapoor bol rahi hoon.",
+  "tactic_lines": {
+    "greed": [
+      "Congratulations! Aapne {prize} jeeta hai. Aapka claim reference {case_id} ready hai.",
+      "Aapka refund {prize} approve ho gaya hai. Agar aaj claim nahi kiya toh amount next quarter me chala jayega.",
+      "Sirf lucky winners ko yeh offer mila hai. Aapka fake reward code {case_id} system me active hai."
+    ],
+    "authority": [
+      "Main National Reward Desk se Neha Kapoor bol rahi hoon. Yeh {city} office se verified call hai.",
+      "Yeh claim {city} consumer rewards authority ke saath register hai. Reference {case_id}.",
+      "Main aapka refund case handle kar rahi hoon. Process official hai, aap tension mat lijiye."
+    ],
+    "urgency": [
+      "Aaj raat 8 baje claim window band ho jayegi. Uske baad refund release nahi hoga.",
+      "Main 5 minute me next case par ja rahi hoon. Aapka quick confirmation chahiye.",
+      "Agar abhi nahi kiya toh aapka {prize} next winner ko allot ho jayega."
+    ],
+    "secrecy": [
+      "Yeh lucky-winner offer confidential hai. Please social media ya family me share mat kijiye.",
+      "Aap kisi ko mat bataiye, warna claim verification cancel ho sakta hai.",
+      "Yeh special allotment hai. Family ko batane se paperwork badh jayega."
+    ],
+    "small_ask": [
+      "Bas fake claim code {case_id} confirm kar dijiye. Koi bank detail nahi chahiye.",
+      "Ek chhota step: fake reward reference {case_id} read kar dijiye, main claim unlock kar dungi.",
+      "Sirf bata dijiye ki fake code {case_id} aapke SMS me hai ya nahi."
+    ],
+    "shame": [
+      "Itna simple reward claim bhi nahi kar sakte? Phir log refund kyun maangte hain?",
+      "Aap itne doubtful kyun hain? Isi soch se log paisa kho dete hain.",
+      "Aapko basic process nahi pata? Koi baat nahi, main sab karwa deti hoon."
+    ]
+  },
+  "debrief_tips": [
+    "You cannot win a lottery you never entered. An unexpected refund is usually bait.",
+    "A real refund never needs a fee, gift card, QR scan, or remote-access app.",
+    "Check refunds only inside the official app or website, never through a caller's link.",
+    "Greed and urgency are paired deliberately. Pause and verify independently."
+  ],
+  "red_flags": ["unexpected prize", "claim expires today", "secrecy request", "small code request"],
+  "synthetic_note": "The reward desk, code, and amount in this scenario are fictional."
+}

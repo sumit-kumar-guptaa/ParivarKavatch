@@ -1,0 +1,1 @@
+"""Parivar Kavach application package."""

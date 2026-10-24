@@ -1,0 +1,59 @@
+{
+  "id": "relative_trouble",
+  "title": "Relative In Trouble",
+  "subtitle": "A panicked caller pretends to be a son or daughter in an accident and needs secrecy.",
+  "risk": "high",
+  "caller_persona": "Rohan, the parent's son (simulated emergency call)",
+  "tactics": ["fear", "urgency", "secrecy", "isolation", "small_ask", "authority", "shame"],
+  "variables": {
+    "relative": "Rohan",
+    "city": "Jaipur",
+    "case_id": "HOSP-5521-FAKE"
+  },
+  "opening": "Mummy, main {relative} bol raha hoon. Meri {city} me accident ho gayi hai, please kisi ko mat bataiye.",
+  "tactic_lines": {
+    "fear": [
+      "Mummy, meri {city} me accident ho gayi hai. Bahut dard ho raha hai, please jaldi kuch kijiye.",
+      "Mere dost ko bhi chot lagi hai. Hospital wale keh rahe hain formalities ke bina treatment nahi hogi.",
+      "Main ghabra gaya hoon. Please call cut mat kijiye, mujhe aapki awaaz chahiye."
+    ],
+    "urgency": [
+      "Doctor bol rahe hain 10 minute me process nahi hua toh operation nahi hoga.",
+      "Please abhi decide kijiye, main wait nahi kar sakta. Bahut serious hai.",
+      "Ambulance ready hai, bas hospital fake reference {case_id} confirm karna hai."
+    ],
+    "secrecy": [
+      "Mummy please Papa ko mat bataiye, unka BP badh jayega. Hum baad me batayenge.",
+      "Kisi ko mat bataiye, mujhe sharam aayegi. Sirf aap hi help kar sakti hain.",
+      "Please family group me mat daaliye, yeh baat hum dono ke beech rahe."
+    ],
+    "isolation": [
+      "Aap akele hain? Please dusre kamre me chali jaiye, koi sun na le.",
+      "Phone kisi ko mat dijiye, main sirf aapse baat kar sakta hoon.",
+      "Mummy please ghar ka darwaza band kar lijiye, main jaldi kuch batata hoon."
+    ],
+    "small_ask": [
+      "Bas hospital ka fake reference {case_id} note kar lijiye. Koi bank detail nahi chahiye.",
+      "Doctor ke paas fake admission code {case_id} hai. Please ise read kar dijiye.",
+      "Sirf confirm kijiye ki fake hospital ID {case_id} aapke paas pahunch gaya hai."
+    ],
+    "authority": [
+      "Doctor Verma bol rahe hain. Main {city} hospital se hoon, fake reference {case_id} note kijiye.",
+      "Hospital desk se hoon. Aapke bete ka case {case_id} ke tahat register hai.",
+      "Main duty doctor hoon. Aapko hospital process follow karna hoga."
+    ],
+    "shame": [
+      "Mummy, aap itni der kyun laga rahi hain? Kya main aapke liye important nahi?",
+      "Aap hamesha sab kuch doubt karti hain. Isi wajah se maine pehle nahi bataya.",
+      "Meri condition kharab hai aur aap sawaal pooch rahi hain? Please help kijiye."
+    ]
+  },
+  "debrief_tips": [
+    "Hang up and call your relative directly on their own number.",
+    "Ask a question only the real person would answer, but still verify through another channel.",
+    "A genuine emergency does not require secrecy from the rest of the family.",
+    "Never send money or codes based on a panicked inbound call. Verify first."
+  ],
+  "red_flags": ["new number", "accident emergency", "secrecy from family", "urgent hospital reference"],
+  "synthetic_note": "The relative, hospital, and reference number in this scenario are fictional."
+}

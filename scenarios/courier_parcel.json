@@ -1,0 +1,54 @@
+{
+  "id": "courier_parcel",
+  "title": "Courier Parcel Scam",
+  "subtitle": "A fake customs officer claims a parcel with illegal items is registered in your name.",
+  "risk": "medium",
+  "caller_persona": "Officer R. Mehta, Delhi Customs (simulated)",
+  "tactics": ["authority", "fear", "urgency", "secrecy", "isolation", "small_ask"],
+  "variables": {
+    "courier": "SpeedExpress",
+    "tracking": "TRK-4471-FAKE",
+    "city": "Delhi"
+  },
+  "opening": "Namaste, main {courier} customs clearance se R. Mehta bol raha hoon. Aapke naam par ek parcel pakda gaya hai.",
+  "tactic_lines": {
+    "authority": [
+      "Namaste, main {city} customs clearance se Officer R. Mehta bol raha hoon. Aapke naam par parcel {tracking} intercepted hua hai.",
+      "Yeh call customs parcel unit se hai. Aapka fake tracking reference {tracking} red-flag list me hai.",
+      "Main customs enforcement desk par hoon. Aapko official clearance process batana hai."
+    ],
+    "fear": [
+      "Parcel me illegal items mile hain. Aapka naam aur address consignment par hai, isliye case aap par banega.",
+      "Yeh matter narcotics cell ko ja sakta hai. Aapko turant apna naam clear karna hoga.",
+      "Agar aap cooperate nahi karenge, toh local police verification ke liye case forward hoga."
+    ],
+    "urgency": [
+      "Parcel 30 minute me destroy list par chala jayega. Tab evidence ke liye aapko hi aana padega.",
+      "Aaj shaam tak clearance nahi hua toh courier company aap par penalty laga degi.",
+      "Main line par 10 minute hi available hoon. Jaldi decide kijiye."
+    ],
+    "secrecy": [
+      "Yeh investigation confidential hai, kisi ko mat bataiye. Customs matters publicly discuss nahi hote.",
+      "Please is call ki baat family ko mat bataiye, warna panic aur verification dono badhenge.",
+      "Aap courier office ko bhi mat call kijiye. Woh internal team ko nahi jaante."
+    ],
+    "isolation": [
+      "Please aap akele baat kijiye. Background me koi ho toh confidential details share nahi kar sakta.",
+      "Aap kisi ko phone mat dijiye. Main sirf consignee se verify kar sakta hoon.",
+      "Kamra band kijiye aur dhyaan se suniye, yeh customs matter hai."
+    ],
+    "small_ask": [
+      "Bas fake tracking reference {tracking} confirm kar dijiye. Koi payment ya bank detail nahi maang raha.",
+      "Aapke naam par parcel hai ya nahi, sirf fake reference {tracking} se bata dijiye.",
+      "Ek chhota step: fake parcel ID {tracking} read kar dijiye, main system me close kar dunga."
+    ]
+  },
+  "debrief_tips": [
+    "Couriers do not call to announce that a parcel with illegal items has been found.",
+    "Track parcels only through the courier's official app or website you opened yourself.",
+    "Never pay a 'clearance fee' or share documents with an inbound caller.",
+    "Ask for the written notice and a tracking number, then call the courier independently."
+  ],
+  "red_flags": ["parcel with illegal items", "customs officer calls personally", "clearance deadline", "asking to keep it secret"],
+  "synthetic_note": "The courier, tracking number, and officer in this scenario are fictional."
+}
